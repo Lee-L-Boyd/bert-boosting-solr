@@ -1,0 +1,1 @@
+curl http://localhost:8983/solr/lee7/config/params -H 'Content-type:application/json' -d '{ "set":{ "test_params":{ "split": "/paragraphs|/paragraphs/qas|/paragraphs/qas/answers", "f" :["title:/title", "context:/paragraphs/context", "/paragraphs/qas/question", "/paragraphs/qas/answers/text"]}}}'
